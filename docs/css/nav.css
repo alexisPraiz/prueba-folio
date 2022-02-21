@@ -1,0 +1,90 @@
+/*---==== Menu: Inicio ====---*/
+nav{
+    width: 100%;
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 2.2em;
+    background: #21325E;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+.ul_links{
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(6,-webkit-max-content);
+    grid-template-columns: repeat(6,max-content);
+    -moz-column-gap: 1.1em;
+         -webkit-column-gap: 1.1em;
+            column-gap: 1.1em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.ul_links li a i{
+    padding-right: 1px;
+    font-size: 1.1em;
+}
+.ul_links li a{
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #FDEFF4;
+    position: relative;
+}
+.ul_links li a:hover{
+    color: rgba(255,255,255,.9);
+}
+.ul_links li a::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #FDEFF4;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: width .3s ease;
+    -o-transition: width .3s ease;
+    transition: width .3s ease;
+}
+.ul_links li a:hover::before{
+    width: 100%;
+}
+.ul_links .icon_close,
+nav label i{
+    font-size: 2em;
+    color: #FDEFF4;
+    cursor: pointer;
+}
+.ul_links .icon_close{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: .4em;
+    left: .5em;
+}
+nav label{
+    display: none;
+    pointer-events: none;
+}
+nav h2{
+    color: #FDEFF4;
+}
+/*---==== Menu: Final ====---*/

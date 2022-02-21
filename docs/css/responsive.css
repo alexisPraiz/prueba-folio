@@ -1,0 +1,294 @@
+/*---==== Responsive desing ====---*/
+@media screen and (max-width: 1440px){
+    body{
+        font-size: 25px;
+    }
+    main{
+        margin-top: 100px;
+    }
+    nav{
+        height: 100px;
+    }
+    .presentacion span{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    body{
+        font-size: 16px;
+    }
+    main{
+        margin-top: 80px;
+    }
+    nav{
+        height: 80px;
+    }
+    .presentacion span{
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body{
+       font-size: 14px;
+    }
+    /*---==== Menú ====---*/
+    .ul_links{
+        -moz-column-gap: .8em;
+             -webkit-column-gap: .8em;
+                column-gap: .8em;
+    }
+
+    /*---==== Presentación ====---*/
+    .presentacion{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    body{
+        font-size: 13px;
+    }
+    /*---==== Skills ====---*/
+    .cards{
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2,1fr);    
+    }
+    .card_css{
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+    .card_js{
+        -webkit-box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.8);
+                box-shadow: 0px 3px 15px -5px rgba(0,0,0,0.8);
+        grid-column: span 2;
+    }
+
+    /*---==== Proyectos ====---*/
+    .proyectos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'homepage comment'
+        'wind  input';
+    }
+}
+
+@media screen and (max-width: 650px){
+    nav{
+        padding: 0 1em;
+    }
+    nav h2{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        font-size: 15px;
+    }
+    main{margin-top: 60px;}
+    /*---==== Menú: Inicio ====---*/
+    nav{
+        height: 60px;
+        padding: 0 1.2em;
+    }
+    .ul_links{
+        position: fixed;
+        top: 0;
+        left: 0;     
+        bottom: 0;
+        width: 62%;
+        height: 100vh;  
+        display: -webkit-box;  
+        display: -ms-flexbox;  
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background: #21325E;      
+        -webkit-transform: translateX(-100%);      
+            -ms-transform: translateX(-100%);      
+                transform: translateX(-100%);
+        z-index: 100;
+        -webkit-transition: -webkit-transform .3s ease;
+        transition: -webkit-transform .3s ease;
+        -o-transition: transform .3s ease;
+        transition: transform .3s ease;
+        transition: transform .3s ease, -webkit-transform .3s ease;
+    }
+    nav label{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        pointer-events: unset;
+    }
+    /*---==== Menú: Final ====---*/
+
+    /*---==== Presentación: Inicio ====---*/
+    #presentacion{
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        padding-bottom: 100px;
+    }
+    .presentacion{
+        width: 90%;
+        grid-auto-flow: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
+        row-gap: 20px;
+    }
+    .presentacion span{
+        width: 250px;
+        height: 250px;
+        justify-self: center;
+    }
+    /*---==== Presentación: Final ====---*/
+
+    /*---==== Skills: Inicio ====---*/
+    .cards{
+        grid-auto-flow: row;
+        grid-template-columns: none;
+        row-gap: 20px;
+        padding: 0;
+    }
+    .card_css{
+        -webkit-box-shadow:  0px 3px 15px -5px rgba(0,0,0,0.8);
+                box-shadow:  0px 3px 15px -5px rgba(0,0,0,0.8);
+    }
+    .card_js{
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        grid-column: span 1;
+    }
+    /*---==== Skills: Final ====---*/
+
+    /*---==== Proyectos: Inicio ====---*/
+    #proyectos{
+        padding: 0;
+        padding-bottom: 100px;
+    }
+    #proyectos h2{
+        padding-top: 2em;
+        padding-left: 1em;
+    }
+    .proyectos{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'homepage'
+        'comment'
+        'wind'
+        'input';
+        padding: 0 .8em;
+    }
+    .proyecto{
+        padding: .9em;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;   
+    }
+    .proyecto .div{
+        padding-left: 15px;
+    }
+    .proyecto .div div{
+        width: -webkit-max-content;
+        width: -moz-max-content;
+        width: max-content;
+    }
+    .proyecto img{
+        width: 50%;
+    }
+    /*---==== Proyectos: Final ====---*/
+
+    /*---==== Más info ====---*/
+    #mas_info h2{
+        padding-left: 1em;
+    }
+    #mas_info p{
+        width: 85%;
+        padding-top: 1.5em;
+    }
+}
+
+@media screen and (max-width: 380px){
+    /*---==== Skills ====---*/
+    #skills{
+        padding: 1.2em;
+        padding-bottom: 100px;
+    }
+    .card{
+        padding: 1.5em;
+    }
+
+    /*---==== Contacto ====---*/
+    #contacto ul{
+        padding: 1.2em 1em;
+    }
+}
+
+@media screen and (max-width: 365px){
+    /*---==== Presentación ====---*/
+    .presentacion span{
+        width: 230px;
+        height: 230px;
+    }
+
+    /*---==== Más info ====---*/
+    #mas_info h2{
+        padding-left: .8em;
+    }
+    #mas_info p{
+        width: 86%;
+        
+    }
+
+    /*---==== Contacto ====---*/
+    #contacto{
+        font-size: 14px;
+    }
+    #contacto ul{
+        padding: 1.2em 1em;
+    }
+}
+
+@media screen and (max-width: 350px){
+    /*---==== Proyectos ====---*/
+    .proyecto{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .proyecto img{
+        width: 100%;
+    }
+    .proyecto .div div{
+        width: unset;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .presentacion span{
+        width: 210px;
+        height: 210px;
+    }
+}

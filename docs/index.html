@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d8dd195afb.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/responsive.css"> 
+    <title>My portfolio</title>
+</head>
+<body>
+    <nav id="menu">
+        <!---==== Nav: Inicio====--->
+        <ul class="ul_links">
+            <i class='bx bx-x icon_close'></i>
+            <li><a href="#"><i class='bx bx-home-smile'></i>Inicio</a></li>
+            <li><a href="#presentacion"><i class='bx bxs-user'></i>Presentación</a></li>
+            <li><a href="#skills"><i class='bx bxs-hot'></i>Skills</a></li>
+            <li><a href="#proyectos"><i class='bx bxs-notepad'></i>Proyectos</a></li>
+            <li><a href="#mas_info"><i class='bx bx-show-alt'></i>Más info</a></li>
+            <li><a href="#contacto"><i class='bx bxs-envelope'></i>Contacto</a></li>
+        </ul>
+
+        <label>
+            <i class='bx bx-menu-alt-left icon_menu'></i>   
+        </label>
+
+        <h2>Alexis Praiz</h2>
+        <!---==== Nav: Final====--->
+    </nav>
+
+    <main>
+        <!---==== Presentacion: Inicio ====--->
+        <section id="presentacion">
+           <div class="presentacion">
+              <span style="background-image: url(images/myPhoto.jpg);">
+                  Alexis Praiz
+              </span> 
+              <p>
+                 ¡Hola! :)<br>
+                 Me llamo Alexis y soy desarrollador web (frontend).<br>
+                 Ofrezco mis servicios tanto de manera part-time como full-time
+                 a un costo que sin problemas se ajusta a tu presupuesto.
+                 Ya sea que busques a un nuevo integrante para tu equipo
+                 de desarrolladores o busques a alguien que te ayude a crear un proyecto
+                 que tienes en mente, estoy disponible y capacitado para cumplir
+                 tus objetivos.
+              </p>
+           </div> 
+           <div id="particles-js" style="width: 100%; height: 100%; position: absolute;top: 0; z-index: -1"></div>
+           <div style="height: 80px; position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #1C658C;"></path></svg></div>
+        </section>
+        <!---==== Presentacion: Final ====--->  
+
+        <!---==== Skills: Inicio ====--->
+        <section id="skills">
+            <h2>Frontend</h2>
+
+            <div class="cards">
+                <div class="card card_html">
+                    <img src="images/htmlLogo.png" alt="html_logo">                     
+                    <p>
+                        El Lenguaje de Marcado de Hipertexto (HTML) es el código
+                        que se utiliza para estructurar y desplegar una página web 
+                        y sus contenidos.
+                    </p>
+                    <div>
+                        <h3>Habilidades</h3>
+                        <ul>
+                            <li><i class='bx bx-check'></i> Manejo de etiquetas semánticas.</li>
+                            <li><i class='bx bx-check'></i> Posicionamiento SEO.</li>
+                            <li><i class='bx bx-check'></i> Estructuración limpia.</li>
+                            <li><i class='bx bx-check'></i> Formularios.</li>
+                            <li><i class='bx bx-check'></i> Metodología BEM.</li>
+                            <li><i class='bx bx-check'></i> Y mucho más!</li>
+                        </ul>
+                    </div>
+                    <button>
+                        Leer más
+                        <i class='bx bxs-chevron-right'></i>   
+                    </button>
+                </div>
+
+                <div class="card card_css">
+                    <img src="images/cssLogo.png" alt="css_logo">                    
+                    <p>
+                        CSS es un lenguaje de diseño gráfico para definir y crear 
+                        la presentación de un documento estructurado escrito en HTML.<br>
+                    </p>
+                    <div>
+                        <h3>Habilidades</h3>
+                        <ul>
+                            <li><i class='bx bx-check'></i> Flexbox.</li>
+                            <li><i class='bx bx-check'></i> CSS grid.</li>
+                            <li><i class='bx bx-check'></i> Grid áreas.</li>
+                            <li><i class='bx bx-check'></i> Responsive Desing.</li>
+                            <li><i class='bx bx-check'></i> Lo suficiente para crear layouts exóticos.</li>
+                            <li><i class='bx bx-check'></i> Y mucho más!</li>
+                        </ul>
+                    </div>
+                    <button>
+                        Leer más
+                        <i class='bx bxs-chevron-right'></i>
+                    </button>
+                </div>
+
+                <div class="card card_js">
+                    <img src="images/jsLogo.png" alt="js_logo">                    
+                    <p class="parrafo">
+                        Javascript es un lenguaje de programación Script, cuya principal 
+                        función es incluir contenido “dinámico” a las páginas web.<br>
+                    </p>
+                    <div>
+                        <h3>Habilidades</h3>
+                        <ul>
+                            <li><i class='bx bx-check'></i> Manipulación dinámica del DOM.</li>
+                            <li><i class='bx bx-check'></i> Creación de elementos.</li>
+                            <li><i class='bx bx-check'></i> Manejo de archivos JSON.</li>
+                            <li><i class='bx bx-check'></i> Eventos.</li>
+                            <li><i class='bx bx-check'></i> API Rest.</li>
+                            <li><i class='bx bx-check'></i> Y mucho más!</li>
+                        </ul>
+                    </div>
+                    <button>
+                        Leer más
+                        <i class='bx bxs-chevron-right'></i>
+                    </button>
+                </div>
+                <div style="height: 80px; position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; pointer-events: none;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.28,150.50 C501.41,-1.45 499.72,-1.45 501.41,-1.45 L500.84,152.47 L499.72,152.47 Z" style="stroke: none; fill: #181D31;"></path></svg></div>
+            </div>
+        </section>
+        <!---==== Skills: Final ====--->
+        
+        <!---==== Proyectos: Inicio ====--->
+        <section id="proyectos">
+            <h2>Proyectos</h2>          
+            <div class="proyectos">
+                <div class="proyecto homepage">
+                    <img src="images/proyectoHomepage.png" alt="proyecto_homepage">
+                    <div class="div">
+                        <p>Homepage</p>
+                        <div>
+                            <a href="https://alexispraiz.github.io/homepage/" target="_blank" title="Ir" class="btn_demo">Demo</a>
+                            <a href="https://github.com/alexisPraiz/homepage/tree/main/docs" target="_blank" title="Ir" class="btn_code">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto comment">
+                    <img src="images/proyectoComment.png" alt="proyecto_interactive-comment">
+                    <div class="div">
+                        <p>Interactive Comments</p>
+                        <div>
+                            <a href="https://alexispraiz.github.io/interacvite-comments/" target="_blank" title="Ir" class="btn_demo">Demo</a>
+                            <a href="https://github.com/alexisPraiz/interacvite-comments/tree/main/docs" target="_blank" title="Ir" class="btn_code">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto windbnb">
+                    <img src="images/proyectoWindbnb.png" alt="proyecto_windbnb">
+                    <div class="div">
+                        <p>Windbnb (marca)</p>
+                        <div>
+                            <a href="https://alexispraiz.github.io/windbnb/" target="_blank" title="Ir" class="btn_demo">Demo</a>
+                            <a href="https://github.com/alexisPraiz/windbnb/tree/main/docs" target="_blank" title="Ir" class="btn_code">Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto inputs">
+                    <img src="images/proyectoInput.png" alt="proyecto_inputs">
+                    <div class="div">
+                        <p>Inputs</p>
+                        <div>
+                           <a href="https://alexispraiz.github.io/input-components/" target="_blank" title="Ir" class="btn_demo">Demo</a>
+                           <a href="https://github.com/alexisPraiz/input-components/tree/main/docs" target="_blank" title="Ir" class="btn_code">Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 80px; position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; pointer-events: none;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-1.41,-2.44 C-2.54,-3.44 500.84,150.50 499.72,147.55 L499.72,154.45 L0.00,150.00 Z" style="stroke: none; fill: #181D31;"></path></svg></div>
+        </section>
+        <!---==== Proyectos: Final ====--->
+
+        <!---==== Más info: Inicio ====--->
+        <section id="mas_info">
+            <h2>Acerca de mí</h2>
+            <p>
+                Soy competitivo y no descanso hasta estar satisfecho con mi trabajo,
+                considero que tengo capacidad de aprendizaje rápido lo que permite que 
+                me adapte rápido a lo que sea necesario. Siempre busco optimizar lo
+                más posible mi código, me mantengo en constante aprendizaje para 
+                mejorar mi codificación he ingenio.
+                Me gustan los retos intelectuales de la programación.
+                Soy amable y buen compañero, suelo ayudar a gente nueva en grupos
+                de Facebook dando explicaciones a detalles y aclarándoles dudas
+                hasta que estén satisfechos. 
+                Todos los días rindo al máximo, busco programar cada día mejor...
+            </p>
+        </section>
+        <!---==== Más info: Final ====--->
+    </main>
+
+    <footer id="contacto">
+        <ul>    
+            <span class="no_links">
+                <li><i class='bx bxl-whatsapp'></i>+54 1157471585</li>
+                <li><i class='bx bx-envelope'></i>alexispraiz18@gmail.com</li>
+                <li><i class='bx bx-current-location'></i>Argentina, Buenos Aires, Presidente Derqui</li>
+            </span>
+
+            <span  class="links">
+                <li><a href="https://www.facebook.com/profile.php?id=100072879583647" title="Ir"><i class='bx bxl-facebook-square'></i></a></li>
+                <li><a href="https://www.linkedin.com/in/alexis-praiz-b24175211/" title="Ir"><i class='bx bxl-linkedin-square'></i></a></li>      
+                <li><a href="https://github.com/alexisPraiz" title="Ir"><i class='bx bxl-github'></i></a></li> 
+            </span>  
+        </ul>   
+        
+        <p>Diseñado y creado por <b>Alexis Praiz</b> - Portafolio</p>
+    </footer>
+<script src="js/script.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
